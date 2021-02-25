@@ -14,13 +14,17 @@ btns.forEach((btn) => {
       count = 0;
     }
     if (count > 0) {
-      value.style.color = 'green';
+      value.classList.add('green');
+      value.classList.remove('red', 'white');
     } else if (count < 0) {
-      value.style.color = 'red';
+      value.classList.add('red');
+      value.classList.remove('green', 'white');
     } else if (count === 0) {
-      value.style.color = 'black';
+      value.classList.add('white');
+      value.classList.remove('green', 'red');
     }
 
     value.textContent = count;
   });
 });
+console.log(btns);

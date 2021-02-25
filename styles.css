@@ -93,6 +93,7 @@ h2 {
   border-radius: 25px;
   box-shadow: 0px 0px 10px 0px #fff;
   cursor: pointer;
+  outline: none;
 }
 
 .btn:hover {
